@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+
+<!--    <test name="firefoxTest" verbose="2" preserve-order="true">-->
+<!--        <parameter name="browser" value="firefox"></parameter>-->
+<!--        <parameter name="url" value="https://www.ebay.com/"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="org.example.Navigate">-->
+<!--                <methods>-->
+<!--                    <include name="navigateUrl"/>-->
+<!--                </methods>-->
+
+<!--            </class>-->
+<!--            <class name="org.example.FirstPage">-->
+<!--                <methods>-->
+<!--                    <include name="validateUrl"/>-->
+<!--                    <include name="categorySelection"/>-->
+<!--                    <include name="search"/>-->
+<!--                    <include name="submitSearch"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="org.example.SecondPage">-->
+<!--                <methods>-->
+<!--                    <include name="checkbox"/>-->
+<!--                    <include name="selectFirst"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="org.example.ThirdPage">-->
+<!--                <methods>-->
+<!--                    <include name="selectModel"/>-->
+<!--                    <include name="selectCarrier"/>-->
+<!--                    <include name="selectStorage"/>-->
+<!--                    <include name="selectColor"/>-->
+<!--                    <include name="selectCosmetic"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+
+<!--            <class name="org.example.InfoAndCart">-->
+<!--                <methods>-->
+<!--                    <include name="getName"/>-->
+<!--                    <include name="getCondition"/>-->
+<!--                    <include name="getPrice"/>-->
+<!--                    <include name="getQuantity"/>-->
+<!--                    <include name="addToCart"/>-->
+<!--                    <include name="checkName"/>-->
+<!--                    <include name="checkPrice"/>-->
+<!--                    <include name="checkQuantity"/>-->
+<!--                    <include name="subTotal"/>-->
+<!--                    <include name="shippingCost"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="chromeTest" verbose="2" preserve-order="true">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://www.ebay.com/"></parameter>
+        <classes>
+            <class name="org.example.Navigate">
+                <methods>
+                    <include name="navigateUrl"/>
+                </methods>
+
+            </class>
+            <class name="org.example.FirstPage">
+                <methods>
+                    <include name="validateUrl"/>
+                    <include name="categorySelection"/>
+                    <include name="search"/>
+                    <include name="submitSearch"/>
+                </methods>
+            </class>
+
+            <class name="org.example.SecondPage">
+                <methods>
+                    <include name="checkbox"/>
+                    <include name="selectFirst"/>
+                </methods>
+            </class>
+
+            <class name="org.example.ThirdPage">
+                <methods>
+                    <include name="selectA"/>
+                    <include name="selectB"/>
+                    <include name="selectC"/>
+                    <include name="selectD"/>
+                    <include name="selectE"/>
+                    <include name="selectF"/>
+                </methods>
+            </class>
+
+            <class name="org.example.InfoAndCart">
+                <methods>
+                    <include name="getName"/>
+                    <include name="getCondition"/>
+                    <include name="getPrice"/>
+                    <include name="getQuantity"/>
+                    <include name="addToCart"/>
+                    <include name="checkName"/>
+                    <include name="checkPrice"/>
+                    <include name="checkQuantity"/>
+                    <include name="subTotal"/>
+                    <include name="shippingCost"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
